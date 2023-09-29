@@ -1,4 +1,9 @@
-x=[1,2]
-y=x
-x=[3,4]
-print(x,y)
+import timeit
+import sys
+my_list=[1,"hello",2.5,True,'abcde',199,200,201]
+my_tuple=(1,"hello",2.5,True,'abcde',199,200,201)
+list_to_tuple=tuple(my_list)
+print(f"{sys.getsizeof(my_list)} bytes")
+print(f"{sys.getsizeof(my_tuple)} bytes")
+print(f"{sys.getsizeof(list_to_tuple)} bytes")
+
