@@ -1,0 +1,12 @@
+import timeit
+import sys
+my_list=[1,"hello",2.5,True,'abcde',199,200,201]
+list_time=timeit.timeit(stmt=my_list,number=10000)
+my_tuple=(1,"hello",2.5,True,'abcde',199,200,201)
+list_to_tuple=tuple(my_list)
+print(f"List : {sys.getsizeof(my_list)} bytes")
+print(f"{list_time} seconds")
+# print(f"Tuple : {sys.getsizeof(my_tuple)} bytes")
+# print(f"{timeit.timeit(stmt=my_tuple,number=1000)} seconds")
+# print(f"List to Tuple : {sys.getsizeof(list_to_tuple)} bytes")
+# print(f"{timeit.timeit(stmt=list_to_tuple,number=1000)} seconds")
